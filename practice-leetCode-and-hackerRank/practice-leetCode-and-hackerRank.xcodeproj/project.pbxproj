@@ -10,6 +10,7 @@
 		594A984B23CEC2E8006A493C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 594A984A23CEC2E8006A493C /* main.cpp */; };
 		594A985323CEC340006A493C /* randomCode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 594A985123CEC340006A493C /* randomCode.cpp */; };
 		594A985523CEC839006A493C /* test-code-for-main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 594A985423CEC839006A493C /* test-code-for-main.cpp */; };
+		595BE17123CFA72B00896598 /* List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 595BE16F23CFA72B00896598 /* List.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +31,8 @@
 		594A985123CEC340006A493C /* randomCode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = randomCode.cpp; sourceTree = "<group>"; };
 		594A985223CEC340006A493C /* randomCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = randomCode.h; sourceTree = "<group>"; };
 		594A985423CEC839006A493C /* test-code-for-main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "test-code-for-main.cpp"; sourceTree = "<group>"; };
+		595BE16F23CFA72B00896598 /* List.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = List.cpp; sourceTree = "<group>"; };
+		595BE17023CFA72B00896598 /* List.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 			isa = PBXGroup;
 			children = (
 				594A984A23CEC2E8006A493C /* main.cpp */,
+				595BE16F23CFA72B00896598 /* List.cpp */,
+				595BE17023CFA72B00896598 /* List.h */,
 				594A985423CEC839006A493C /* test-code-for-main.cpp */,
 				594A985123CEC340006A493C /* randomCode.cpp */,
 				594A985223CEC340006A493C /* randomCode.h */,
@@ -128,6 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				594A984B23CEC2E8006A493C /* main.cpp in Sources */,
+				595BE17123CFA72B00896598 /* List.cpp in Sources */,
 				594A985323CEC340006A493C /* randomCode.cpp in Sources */,
 				594A985523CEC839006A493C /* test-code-for-main.cpp in Sources */,
 			);

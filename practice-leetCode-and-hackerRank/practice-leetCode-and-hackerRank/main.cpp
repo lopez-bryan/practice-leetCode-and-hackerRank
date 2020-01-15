@@ -8,13 +8,22 @@
 
 #include <iostream>
 #include "randomCode.h"
+#include "List.h"
 
 
 int main() {
-    int num = 123;
+    List l;
+    l.addNode(1);
+    l.addNode(2);
+    l.addNode(3);
     
-    RandomCode ran;
-    std::cout << ran.reverseInt(num) << std::endl;
+    l.printList();
+    
+    std::cout << std::endl;
+    
+    l.reverse();
+    l.printList();
+    std::cout << std::endl;
     
     return 0;
 }
