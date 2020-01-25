@@ -9,21 +9,16 @@
 #include <iostream>
 #include "randomCode.h"
 #include "List.h"
+#include "LRUCache.h"
+#include "crackingInterview.h"
 
 
 int main() {
-    List l;
-    l.addNode(1);
-    l.addNode(2);
-    l.addNode(3);
+    char name[] = {'C', 'r', 'i', 's'};
     
-    l.printList();
-    
-    std::cout << std::endl;
-    
-    l.reverse();
-    l.printList();
-    std::cout << std::endl;
-    
+    Cracking c;
+    c.reverse(name);
+ 
     return 0;
 }
+

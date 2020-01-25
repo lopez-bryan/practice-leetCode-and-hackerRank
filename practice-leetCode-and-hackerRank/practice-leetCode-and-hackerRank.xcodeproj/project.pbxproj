@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		593A01FA23D0F8B4000AC9D8 /* LRUCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 593A01F823D0F8B4000AC9D8 /* LRUCache.cpp */; };
 		594A984B23CEC2E8006A493C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 594A984A23CEC2E8006A493C /* main.cpp */; };
 		594A985323CEC340006A493C /* randomCode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 594A985123CEC340006A493C /* randomCode.cpp */; };
 		594A985523CEC839006A493C /* test-code-for-main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 594A985423CEC839006A493C /* test-code-for-main.cpp */; };
 		595BE17123CFA72B00896598 /* List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 595BE16F23CFA72B00896598 /* List.cpp */; };
+		59E7958323D0D84A00459ECF /* crackingInterview.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 59E7958123D0D84A00459ECF /* crackingInterview.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +28,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		593A01F823D0F8B4000AC9D8 /* LRUCache.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LRUCache.cpp; sourceTree = "<group>"; };
+		593A01F923D0F8B4000AC9D8 /* LRUCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRUCache.h; sourceTree = "<group>"; };
 		594A984723CEC2E8006A493C /* practice-leetCode-and-hackerRank */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "practice-leetCode-and-hackerRank"; sourceTree = BUILT_PRODUCTS_DIR; };
 		594A984A23CEC2E8006A493C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		594A985123CEC340006A493C /* randomCode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = randomCode.cpp; sourceTree = "<group>"; };
@@ -33,6 +37,8 @@
 		594A985423CEC839006A493C /* test-code-for-main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "test-code-for-main.cpp"; sourceTree = "<group>"; };
 		595BE16F23CFA72B00896598 /* List.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = List.cpp; sourceTree = "<group>"; };
 		595BE17023CFA72B00896598 /* List.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
+		59E7958123D0D84A00459ECF /* crackingInterview.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = crackingInterview.cpp; sourceTree = "<group>"; };
+		59E7958223D0D84A00459ECF /* crackingInterview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crackingInterview.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +72,13 @@
 			isa = PBXGroup;
 			children = (
 				594A984A23CEC2E8006A493C /* main.cpp */,
+				594A985423CEC839006A493C /* test-code-for-main.cpp */,
+				59E7958223D0D84A00459ECF /* crackingInterview.h */,
+				59E7958123D0D84A00459ECF /* crackingInterview.cpp */,
+				593A01F823D0F8B4000AC9D8 /* LRUCache.cpp */,
+				593A01F923D0F8B4000AC9D8 /* LRUCache.h */,
 				595BE16F23CFA72B00896598 /* List.cpp */,
 				595BE17023CFA72B00896598 /* List.h */,
-				594A985423CEC839006A493C /* test-code-for-main.cpp */,
 				594A985123CEC340006A493C /* randomCode.cpp */,
 				594A985223CEC340006A493C /* randomCode.h */,
 			);
@@ -134,6 +144,8 @@
 			files = (
 				594A984B23CEC2E8006A493C /* main.cpp in Sources */,
 				595BE17123CFA72B00896598 /* List.cpp in Sources */,
+				593A01FA23D0F8B4000AC9D8 /* LRUCache.cpp in Sources */,
+				59E7958323D0D84A00459ECF /* crackingInterview.cpp in Sources */,
 				594A985323CEC340006A493C /* randomCode.cpp in Sources */,
 				594A985523CEC839006A493C /* test-code-for-main.cpp in Sources */,
 			);

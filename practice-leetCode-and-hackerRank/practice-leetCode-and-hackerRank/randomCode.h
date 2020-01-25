@@ -18,6 +18,7 @@ public:
     // reverse an integer
     int reverseInt(int);
     
+    
 };
 
 #endif /* randomCode_h */

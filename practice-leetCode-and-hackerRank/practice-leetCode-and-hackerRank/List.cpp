@@ -70,6 +70,31 @@ void List::reverse() {
         head = prev;
 }
 
+void List::deleteNode(int delData) {
+    nPtr n = new Node;
+    
+    curr = head;
+    temp = head;
+    
+    while (curr->data != delData && curr != nullptr) {
+        temp = curr;
+        curr = curr->next;
+    }
+    
+    if (curr == nullptr) {
+        std::cout << "There is not data to delete\n";
+        delete n;
+    }
+    else {
+        n = curr;
+        curr = curr->next;
+        temp->next = curr;
+        delete n;
+        std::cout << delData << " has been deleted\n";
+    }
+    
+}
+
 
 
 
