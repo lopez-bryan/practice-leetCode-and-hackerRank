@@ -13,6 +13,7 @@
 		594A985523CEC839006A493C /* test-code-for-main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 594A985423CEC839006A493C /* test-code-for-main.cpp */; };
 		595BE17123CFA72B00896598 /* List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 595BE16F23CFA72B00896598 /* List.cpp */; };
 		59E7958323D0D84A00459ECF /* crackingInterview.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 59E7958123D0D84A00459ECF /* crackingInterview.cpp */; };
+		59E93D0C23DD5EC4003E561C /* leetCode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 59E93D0A23DD5EC4003E561C /* leetCode.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +40,8 @@
 		595BE17023CFA72B00896598 /* List.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
 		59E7958123D0D84A00459ECF /* crackingInterview.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = crackingInterview.cpp; sourceTree = "<group>"; };
 		59E7958223D0D84A00459ECF /* crackingInterview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crackingInterview.h; sourceTree = "<group>"; };
+		59E93D0A23DD5EC4003E561C /* leetCode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = leetCode.cpp; sourceTree = "<group>"; };
+		59E93D0B23DD5EC4003E561C /* leetCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = leetCode.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 				595BE17023CFA72B00896598 /* List.h */,
 				594A985123CEC340006A493C /* randomCode.cpp */,
 				594A985223CEC340006A493C /* randomCode.h */,
+				59E93D0A23DD5EC4003E561C /* leetCode.cpp */,
+				59E93D0B23DD5EC4003E561C /* leetCode.h */,
 			);
 			path = "practice-leetCode-and-hackerRank";
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 				59E7958323D0D84A00459ECF /* crackingInterview.cpp in Sources */,
 				594A985323CEC340006A493C /* randomCode.cpp in Sources */,
 				594A985523CEC839006A493C /* test-code-for-main.cpp in Sources */,
+				59E93D0C23DD5EC4003E561C /* leetCode.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

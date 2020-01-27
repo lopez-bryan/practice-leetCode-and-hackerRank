@@ -29,6 +29,27 @@ bool isUnique(std::string str) {
     return true;
 }
 
+// 1.2 Reverse a null terminated string
+void Cracking::reverse(char * str) {
+    // Create a new string.
+    std::string myString = "";
+    // Start at the end of the string.
+    int i = sizeof(str) - 1;
+    
+    // Append each letter to at the end of the new string.
+    while (i >= 0) {
+        myString += str[i];
+        // Decrement by 1 after each iteration.
+        i--;
+    }
+    
+    // Lets output the new string.
+    for (int i = 0; i < myString.length(); i++) {
+        std::cout << myString[i];
+    }
+    std::cout << std::endl;
+}
+
 
 // This function will compress a string. It will count all the duplicates and put the number after the letter.
 std::string Cracking::compression(std::string str) {
@@ -79,7 +100,7 @@ std::vector<int> twoSum(std::vector<int>& nums, int target) {
         int sum = target - nums[i];
         // Look for that number in the map.
         it = mp.find(sum);
-        // If we do not find that number in the map, push the number and the iteration onto the other vector.
+        // If we do find that number in the map, push the number and the iteration onto the other vector.
         if (it != mp.end()) {
             answers.push_back(it->second);
             answers.push_back(i);
@@ -96,27 +117,6 @@ std::vector<int> twoSum(std::vector<int>& nums, int target) {
     return answers;
 }
 
-
-// 1.2 Reverse a null terminated string
-void Cracking::reverse(char * str) {
-    // Create a new string.
-    std::string myString = "";
-    // Start at the end of the string.
-    int i = sizeof(str) - 1;
-    
-    // Append each letter to at the end of the new string.
-    while (i >= 0) {
-        myString += str[i];
-        // Decrement by 1 after each iteration.
-        i--;
-    }
-    
-    // Lets output the new string. 
-    for (int i = 0; i < myString.length(); i++) {
-        std::cout << myString[i];
-    }
-    std::cout << std::endl;
-}
 
 
 

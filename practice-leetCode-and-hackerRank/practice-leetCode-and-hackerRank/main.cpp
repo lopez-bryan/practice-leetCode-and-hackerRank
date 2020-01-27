@@ -11,13 +11,16 @@
 #include "List.h"
 #include "LRUCache.h"
 #include "crackingInterview.h"
+#include "leetCode.h"
 
 
 int main() {
-    char name[] = {'C', 'r', 'i', 's'};
+    LeetCode le;
     
-    Cracking c;
-    c.reverse(name);
+    std::vector<int> v1 = {1, 3, 10};
+    std::vector<int> v2 = {2, 4, 16, 33, 55};
+    
+    std::cout << le.getMedian(v1, v2) << std::endl;
  
     return 0;
 }
