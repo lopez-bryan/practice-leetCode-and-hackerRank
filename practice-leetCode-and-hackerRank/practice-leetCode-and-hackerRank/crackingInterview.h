@@ -20,6 +20,11 @@ public:
     std::string compression(std::string str);
     std::vector<int> twoSum(std::vector<int>& nums, int target);
     void reverse(char * str);
+    bool isPermutation(std::string a, std::string b);
+    void replaceSpaces(char str[], int length);
+    //void rotate(int n, int matrix[][n]);
+    void setZeros(int matrix[3][3]);
+    bool isRotation(std::string s1, std::string s2);
 };
 
 #endif /* crackingInterview_h */

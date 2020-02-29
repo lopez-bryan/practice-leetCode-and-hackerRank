@@ -50,7 +50,56 @@ void Cracking::reverse(char * str) {
     std::cout << std::endl;
 }
 
+// 1.3 Decide if one string is a permutation of another. See if legths match, sort strings, see if they match up with each other one by one.
+bool Cracking::isPermutation(std::string a, std::string b) {
+    // Get the sizes of the two strings.
+    unsigned long n1 = a.length();
+    unsigned long n2 = b.length();
+    // If the two string are not the same length, they are obviously not permutations of another.
+    if (n1 != n2) {
+        return false;
+    }
+    // Sort both strings
+    sort(a.begin(), a.begin());
+    sort(b.begin(), b.end());
+    // If both string do not matchup, they are not permutations of each other.
+    for (int i = 0; i < n1; i++) {
+        if (a[i] != b[i]) {
+            return false;
+        }
+    }
+    // If we get this far, then the string are a permutation of each other
+    return true;
+}
 
+// 1.4 Replace all spaces in a string with %20
+void Cracking::replaceSpaces(char str[], int length) {
+    int count = 0;
+    int newLength = 0;
+    
+    for (int i = 0; i < length; i++) {
+        if (str[i] == ' ') {
+            count++;
+        }
+    }
+    newLength = length + (count * 2);
+    str[newLength] = '\0';
+    
+    for (int i = length - 1; i >= 0; i--) {
+        if (str[i] == ' ') {
+            str[newLength - 1] = '0';
+            str[newLength - 2] = '2';
+            str[newLength - 3] = '%';
+            newLength = newLength - 3;
+        }
+        else {
+            str[newLength - 1] = str[i];
+            newLength = newLength - 1;
+        }
+    }
+} 
+
+// 1.5
 // This function will compress a string. It will count all the duplicates and put the number after the letter.
 std::string Cracking::compression(std::string str) {
     // Make a new string to store the compressed version
@@ -79,9 +128,54 @@ std::string Cracking::compression(std::string str) {
     // Make sure to add the last letter and count to the new string before returning it.
     adjustedString += letter;
     adjustedString += std::to_string(count);
-    
+
     return adjustedString;
 }
+
+
+// 1.6 Rotate image by 90 degrees
+// At the moment, this function does not work.
+//void Cracking::rotate(int n, int matrix[][n]) {
+//    for (int layer = 0; layer < n/2; ++layer) {
+//        int first = layer;
+//        int last = n-1 - layer;
+//
+//        for (int i = first; i < last; ++i) {
+//            int offset = i - first;
+//            // save top
+//            int top = matrix[first][i];
+//            // left -> top
+//            matrix[first][i]  = matrix[last-offset][first];
+//            // bottom ->left
+//            matrix[last-offset][first] = matrix[last][last - offset];
+//            // right -> bottom
+//            matrix[last][last - offset] = matrix[i][last];
+//
+//            // top ->right
+//            matrix[i][last] = top;
+//        }
+//    }
+//}
+
+// 1.7 set zeros for matrix.
+//void Cracking::setZeros(int matrix[3][3]) {
+//    bool row[] =
+//}
+
+//bool is_substr(std::string s1, std::string s2) {
+//    return (s1.find(s2) != std::string::npos);
+//}
+//// 1.8 check if one string is a substring and rotation of another string
+//bool Cracking::isRotation(std::string s1, std::string s2) {
+//    unsigned long length = s1.length();
+//    // check if bother string are the same length
+//    if (length == s2.length() && length > 0) {
+//        std::string s1s1 = s1+s1;
+//        return is_substr(s1s1, s2);
+//    }
+//    return false;
+//}
+
 
 
 //C++ using HashTable with 4ms

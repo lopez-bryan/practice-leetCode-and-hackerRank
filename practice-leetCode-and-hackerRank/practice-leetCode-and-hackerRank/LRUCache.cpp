@@ -8,19 +8,21 @@
 
 #include "LRUCache.h"
 
+//LRUCache::LRUCache(int x) {
+//    cache = x;
+//}
+
 LRUCache::LRUCache(int x) {
     cache = x;
 }
 
 void LRUCache::addToCache(int x) {
-
+    
     if (ma.find(x) == ma.end()) {
-        if (li.size() == cache) {
-            int num = li.back();
-            li.pop_back();
-            ma.erase(num);
-            }
-        }
+        int num = li.back();
+        li.pop_back();
+        ma.erase(num);
+    }
     else {
         li.erase(ma[x]);
         li.push_front(x);

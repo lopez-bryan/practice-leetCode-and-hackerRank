@@ -47,7 +47,8 @@ double LeetCode::getMedian(std::vector<int>& nums1, std::vector<int>& nums2) {
     // I use this for the one value right before the halfway point of the two vectors combined.
     int m2 = 0;
     
-    // If the sizes of both arrays are equal an even number
+    // CASE ONE
+    // If the sizes of both arrays are equal to an even number
     if (size3 % 2 == 0) {
         // Lets go through elements from both arrays. We only need to go through their combined
         // size divided by two
@@ -78,6 +79,7 @@ double LeetCode::getMedian(std::vector<int>& nums1, std::vector<int>& nums2) {
         // Return the average of the two numbers.
         return (m1 + m2) / 2;
     }
+    // CASE 2
     // If the two arrays have an odd number of elements.
     else {
         while (count != ((size3 / 2) + 1)) {
@@ -96,6 +98,73 @@ double LeetCode::getMedian(std::vector<int>& nums1, std::vector<int>& nums2) {
         return m1;
     }
 }
+
+// Longest substring of palindrone
+// A O(n^2) time and O(1) space program to
+// find the longest palindromic substring
+
+// A utility function to print a substring str[low..high]
+void LeetCode::printSubStr(char* str, int low, int high)
+{
+    for( int i = low; i <= high; ++i )
+        std::cout << str[i];
+}
+
+// This function prints the longest palindrome substring (LPS)
+// of str[]. It also returns the length of the longest palindrome
+int LeetCode::longestPalSubstr(char *str)
+{
+    int maxLength = 1; // The result (length of LPS)
+    
+    int start = 0;
+    size_t len = std::strlen(str);
+    
+    int low, high;
+    
+    // One by one consider every character as center point of
+    // even and length palindromes
+    for (int i = 1; i < len; ++i)
+    {
+        // Find the longest even length palindrome
+        // with center points as i-1 and i.
+        low = i - 1;
+        high = i;
+        while (low >= 0 && high < len && str[low] == str[high])
+        {
+            if (high - low + 1 > maxLength)
+            {
+                start = low;
+                maxLength = high - low + 1;
+            }
+            --low;
+            ++high;
+        }
+        
+        // Find the longest odd length palindrome with center
+        // point as i
+        low = i - 1;
+        high = i + 1;
+        while (low >= 0 && high < len && str[low] == str[high])
+        {
+            if (high - low + 1 > maxLength)
+            {
+                start = low;
+                maxLength = high - low + 1;
+            }
+            --low;
+            ++high;
+        }
+    }
+    
+    std::cout<<"Longest palindrome substring is: ";
+    printSubStr(str, start, start + maxLength - 1);
+    
+    return maxLength;
+}
+
+
+
+
 
 
 

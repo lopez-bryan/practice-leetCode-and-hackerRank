@@ -18,6 +18,8 @@ public:
     
     std::vector<int> twoSum(std::vector<int>& nums, int target);
     double getMedian(std::vector<int>& nums1, std::vector<int>& nums2);
+    void printSubStr(char* str, int low, int high);
+    int longestPalSubstr(char *str);
 };
 
 #endif /* leetCode_h */

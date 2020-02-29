@@ -12,16 +12,24 @@
 #include "LRUCache.h"
 #include "crackingInterview.h"
 #include "leetCode.h"
-
+using namespace std;
 
 int main() {
-    LeetCode le;
     
-    std::vector<int> v1 = {1, 3, 10};
-    std::vector<int> v2 = {2, 4, 16, 33, 55};
+    RandomCode r;
     
-    std::cout << le.getMedian(v1, v2) << std::endl;
- 
+    int number = 3456;
+    std::cout << number << std::endl;
+    
+    int num = r.reverseInt(number);
+    
+    cout << num << endl;
+    
+//    Cracking cr;
+//
+//    std::string s1 = "waterbottle", s2 = "erbottlewat", s3 = "erbottlewae";
+//    std::cout << s1 << " is" << (cr.isRotation(s1, s2) ? " " : " not ") << "rotation of " << s2 << "\n";
+//    cout << s1 << " is" << (cr.isRotation(s1, s3) ? " " : " not ") << "rotation of " << s3;
     return 0;
 }
 
